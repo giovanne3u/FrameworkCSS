@@ -1,79 +1,60 @@
 .ButtonDefault {
-  background-color: blue;
+  background-color: #c2bfb0;
   padding: 5px;
-  color: white;
+  color: black;
   font-weight: bold;
   border-radius: 4px;
-  border-color: blue;
+  border-color: red;
   width: 12em;
   height: 4em; }
 
 .ButtonDefault:active {
-  background-color: red;
-  border-color: red; }
+  background-color: black;
+  border-color: black;
+  color: white; }
 
 .ButtonDefault:hover {
   cursor: pointer; }
 
 .ButtonSmall {
-  background-color: blue;
+  background-color: #c2bfb0;
   padding: 5px;
-  color: white;
+  color: black;
   font-weight: bold;
   border-radius: 4px;
-  border-color: blue;
+  border-color: red;
   width: 6em;
   height: 2em; }
 
 .ButtonSmall:active {
-  background-color: red;
-  border-color: red; }
+  background-color: black;
+  border-color: black;
+  color: white; }
 
 .ButtonSmall:hover {
   cursor: pointer; }
 
 .ButtonLarge {
-  background-color: blue;
+  background-color: #c2bfb0;
   padding: 5px;
-  color: white;
+  color: black;
   font-weight: bold;
   border-radius: 4px;
-  border-color: blue;
+  border-color: red;
   width: 24em;
   height: 8em; }
 
 .ButtonLarge:active {
-  background-color: red;
-  border-color: red; }
+  background-color: black;
+  border-color: black;
+  color: white; }
 
 .ButtonLarge:hover {
   cursor: pointer; }
 
-.ButtonOrange {
-  background-color: orangered;
-  border-color: orangered; }
-
-.ButtonOrange:active {
-  background-color: green;
-  border-color: green; }
-
-.ButtonOrange:hover {
-  cursor: pointer; }
-
-.ButtonPurple {
-  background-color: purple;
-  border-color: purple; }
-
-.ButtonPurple:active {
-  background-color: aqua;
-  border-color: aqua; }
-
-.ButtonPurple:hover {
-  cursor: pointer; }
-
 .ButtonFlat {
   border: none;
-  background-color: chocolate;
+  background-color: #c2bfb0;
   color: black; }
 
 .ButtonFullContainer {
@@ -81,12 +62,12 @@
 
 .ButtonFancy {
   box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.5);
-  background: radial-gradient(red, purple);
-  border-bottom: 5px solid purple;
+  background: radial-gradient(red, blue);
+  border-bottom: 5px solid blue;
   width: 12em;
   height: 4em; }
 
 .ButtonFancy:active {
-  border-bottom: 1px solid purple; }
+  border-bottom: 1px solid blue; }
 
 /*# sourceMappingURL=Button.css.map */
