@@ -1,3 +1,30 @@
 .jumbotron{
   box-sizing:border-box;
+  background-color: green;
+  padding: 1.5em;
+  width: 35%;
+  p{
+    color: black;
+  }
+}
+
+//à ne pas rajouter, c'est ce que t'as déjà fais
+
+.ButtonDefault{
+  background-color: grey;
+  padding: 5px;
+  color : black;
+  font-weight: bold;
+  border-radius: 4px;
+  border-color: red;
+  width: 12em;
+  height: 4em;
+}
+.ButtonDefault:active{
+  background-color: black;
+  border-color: black;
+  color: white;
+}
+.ButtonDefault:hover{
+  cursor:pointer;
 }
