@@ -1,0 +1,83 @@
+/*
+  A réécrire avec des variables;
+*/
+
+.grid{
+  &>.raw{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 2%;
+    [class*="span"]{
+      box-sizing: border-box;
+      margin-left: 2%;
+    }
+
+    &>.span1{
+      width: 10.5%;
+      border: 2px solid black;
+    }
+
+    &>.span2{
+      width: 23%;
+      border: 2px solid black;
+    }
+    &>.span3{
+      width: 35.5%;
+      border: 2px solid black;
+    }
+
+    &>.span4{
+      width: 48%;
+      border: 2px solid black;
+    }
+
+    &>.span5{
+      width: 60.5%;
+      border: 2px solid black;
+    }
+
+    &>.span6{
+      width: 73%;
+      border: 2px solid black;
+    }
+
+    &>.span7{
+      width: 85.5%;
+      border: 2px solid black;
+    }
+
+    &>.span8{
+      width: 98%;
+      border: 2px solid black;
+    }
+
+    &>.offset1{
+      margin-left: 14.5%;
+    }
+
+    &>.offset2{
+      margin-left: 27%;
+    }
+
+    &>.offset3{
+      margin-left: 39.5%;
+    }
+
+    &>.offset4{
+      margin-left: 52%;
+    }
+
+    &>.offset5{
+      margin-left: 64.5%;
+    }
+
+    &>.offset6{
+      margin-left: 77%;
+    }
+
+    &>.offset7{
+      margin-left: 89.5%;
+    }
+  }
+}
