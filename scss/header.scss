@@ -1,8 +1,12 @@
+$colorPolice : black;
+$bcolorDefault : blue;
+$taillePolice : 25px;
+
 header {
   display: flex;
   justify-content: center;
-  color:black;
-  background-color: blue;
+  color: $colorPolice;
+  background-color: $bcolorDefault;
   padding: 2em;
-  font-size: 25px;
+  font-size: $taillePolice;
 }

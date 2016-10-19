@@ -1,10 +1,14 @@
+$bcolorDefault : green;
+$widthDefault : 35%;
+$colorDefault : black;
+
 .jumbotron{
   box-sizing:border-box;
-  background-color: green;
+  background-color: $bcolorDefault;
   padding: 1.5em;
-  width: 35%;
+  width: $widthDefault;
   p{
-    color: black;
+    color: $colorDefault;
   }
 }
 
