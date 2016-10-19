@@ -1,3 +1,7 @@
+/* Red */
+/* Green */
+/* Blue */
+/* Orange */
 .alert {
   padding: 20px;
   color: white;
@@ -15,8 +19,7 @@
     color: black; }
 
 .danger {
-  background-color: #f44336;
-  /* Red */ }
+  background-color: #f44336; }
 
 .success {
   background-color: #3beb2b; }

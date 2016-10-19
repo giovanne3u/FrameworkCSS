@@ -1,17 +1,30 @@
-.alert {
-    padding: 20px;
+$margin : 15px;
+$padding : 20px;
+$color : white;
+$fontSize : 22px;
+$lineHeight : 20px;
+$cursor : pointer;
+$fontWeight : bold;
+$dangerBackgroundColor : #f44336; /* Red */
+$successBackgroundColor : #3beb2b; /* Green */
+$infoBackgroundColor : #2bd5eb; /* Blue */
+$warningBackgroundColor : #efc71a; /* Orange */
 
-    color: white;
-    margin-bottom: 15px;
+
+.alert {
+    padding: $padding;
+
+    color: $color;
+    margin-bottom: $margin;
 
     .closebtn {
-    margin-left: 15px;
-    color: white;
-    font-weight: bold;
+    margin-left: $margin;
+    color: $color;
+    font-weight: $fontWeight;
     float: right;
-    font-size: 22px;
-    line-height: 20px;
-    cursor: pointer;
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    cursor: $cursor;
     transition: 0.3s;
     }
 
@@ -21,17 +34,17 @@
 }
 
 .danger{
-    background-color: #f44336; /* Red */
+    background-color: $dangerBackgroundColor;
 }
 
 .success{
-  background-color:  #3beb2b;
+  background-color:  $successBackgroundColor;
 }
 
 .info{
-  background-color: #2bd5eb;
+  background-color: $infoBackgroundColor;
 }
 
 .warning{
-  background-color:  #efc71a;
+  background-color:  $warningBackgroundColor;
 }
