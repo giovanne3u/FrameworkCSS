@@ -1,22 +1,39 @@
+$listStyle : none;
+$display : flex;
+$flexDirection : row;
+$flexWrap : wrap;
+$justifyContent : center;
+$alignItems : center;
+$textDecoration : none;
+$color : white;
+$fontWeight : bold;
+$width : 20em;
+$height : 2em;
+$backgroundColor : orange;
+
+$borderSize : 1px;
+$borderStyle : solid;
+$borderColor : white;
+
 .navbar{
   ul{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
+    list-style: $listStyle;
+    display: $display;
+    flex-direction: $flexDirection;
+    justify-content: $justifyContent;
+    flex-wrap: $flexWrap;
     li{
-      width: 20em;
-      height: 2em;
-      background-color: orange;
-      border-right: 1px solid white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      width: $width;
+      height: $height;
+      background-color: $backgroundColor;
+      border-right: $borderSize $borderStyle $borderColor;
+      display: $display;
+      justify-content: $justifyContent;
+      align-items: $alignItems;
       a{
-        text-decoration: none;
-        color: white;
-        font-weight: bold;
+        text-decoration: $textDecoration;
+        color: $color;
+        font-weight: $fontWeight;
       }
     }
   }
