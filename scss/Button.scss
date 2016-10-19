@@ -1,58 +1,65 @@
 $bcolorgrey : #c2bfb0;
+$bcolorblack : black;
+$bcolorDefault : white;
+$colorDefault : black;
+$borderColorDefault : red;
+$fontWeightDefault : bold;
+$heightDefault : 4em;
+$widthDefault : 12em;
 
 .ButtonDefault{
   background-color: $bcolorgrey;
   padding: 5px;
-  color : black;
-  font-weight: bold;
+  color : $colordefault;
+  font-weight: $fontWeightDefault;
   border-radius: 4px;
-  border-color: red;
-  width: 12em;
-  height: 4em;
+  border-color: $borderColorDefault;
+  width: 12em; //$widthDefault
+  height: 4em; //$heightDefault
 }
 .ButtonDefault:active{
-  background-color: black;
-  border-color: black;
-  color: white;
+  background-color: $bcolorDefault;
+  border-color: $borderColorDefault;
+  color: $colorDefault;
 }
 .ButtonDefault:hover{
   cursor:pointer;
 }
 
 .ButtonSmall{
-  background-color: $bcolorgrey;
+  background-color: $bcolorDefault;
   padding: 5px;
-  color : black;
-  font-weight: bold;
+  color : $colorDefault;
+  font-weight: $fontWeightDefault;
   border-radius: 4px;
-  border-color: red;
-  width: 6em;
-  height: 2em;
+  border-color: $borderColorDefault;
+  width: 6em; //$widthDefault
+  height: 2em; //$heightDefault
 
 }
 .ButtonSmall:active{
-  background-color: black;
-  border-color: black;
-  color: white;
+  background-color: $bcolorDefault;
+  border-color: $borderColorDefault;
+  color: $colordefault;
 }
 .ButtonSmall:hover{
   cursor:pointer;
 }
 
 .ButtonLarge{
-  background-color: $bcolorgrey;
+  background-color: $bcolorDefault;
   padding: 5px;
-  color : black;
-  font-weight: bold;
+  color : $colorDefault;
+  font-weight: $fontWeightDefault;
   border-radius: 4px;
-  border-color: red;
-  width: 24em;
-  height: 8em;
+  border-color: $borderColorDefault;
+  width: 24em; //$widthDefault
+  height: 8em; //$heightDefault
 }
 .ButtonLarge:active{
-  background-color: black;
-  border-color: black;
-  color: white;
+  background-color: $bcolorDefault;
+  border-color: $borderColorDefault;
+  color: $colorDefault;
 }
 .ButtonLarge:hover{
   cursor:pointer;
@@ -60,8 +67,8 @@ $bcolorgrey : #c2bfb0;
 
 .ButtonFlat{
   border:none;
-  background-color: $bcolorgrey;
-  color:black;
+  background-color: $bcolorDefault;
+  color:$colorDefault;
 }
 
 .ButtonFullContainer{
@@ -72,8 +79,8 @@ $bcolorgrey : #c2bfb0;
   box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.5);
   background: radial-gradient(red,blue);
   border-bottom: 5px solid blue;
-  width: 12em;
-  height: 4em;
+  width: 12em; //$widthDefault
+  height: 4em; //$heightDefault
 }
 .ButtonFancy:active{
   border-bottom: 1px solid blue;

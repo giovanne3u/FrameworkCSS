@@ -1,73 +1,68 @@
-.ButtonDefault {
-  background-color: #c2bfb0;
-  padding: 5px;
-  color: black;
-  font-weight: bold;
-  border-radius: 4px;
-  border-color: red;
-  width: 12em;
-  height: 4em; }
+/*
+Error: Undefined variable: "$colordefault".
+        on line 13 of Button.scss
 
-.ButtonDefault:active {
-  background-color: black;
-  border-color: black;
-  color: white; }
+8: $widthDefault : 12em;
+9: 
+10: .ButtonDefault{
+11:   background-color: $bcolorgrey;
+12:   padding: 5px;
+13:   color : $colordefault;
+14:   font-weight: $fontWeightDefault;
+15:   border-radius: 4px;
+16:   border-color: $borderColorDefault;
+17:   width: 12em; //$widthDefault
+18:   height: 4em; //$heightDefault
 
-.ButtonDefault:hover {
-  cursor: pointer; }
-
-.ButtonSmall {
-  background-color: #c2bfb0;
-  padding: 5px;
-  color: black;
-  font-weight: bold;
-  border-radius: 4px;
-  border-color: red;
-  width: 6em;
-  height: 2em; }
-
-.ButtonSmall:active {
-  background-color: black;
-  border-color: black;
-  color: white; }
-
-.ButtonSmall:hover {
-  cursor: pointer; }
-
-.ButtonLarge {
-  background-color: #c2bfb0;
-  padding: 5px;
-  color: black;
-  font-weight: bold;
-  border-radius: 4px;
-  border-color: red;
-  width: 24em;
-  height: 8em; }
-
-.ButtonLarge:active {
-  background-color: black;
-  border-color: black;
-  color: white; }
-
-.ButtonLarge:hover {
-  cursor: pointer; }
-
-.ButtonFlat {
-  border: none;
-  background-color: #c2bfb0;
-  color: black; }
-
-.ButtonFullContainer {
-  width: 100%; }
-
-.ButtonFancy {
-  box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.5);
-  background: radial-gradient(red, blue);
-  border-bottom: 5px solid blue;
-  width: 12em;
-  height: 4em; }
-
-.ButtonFancy:active {
-  border-bottom: 1px solid blue; }
-
-/*# sourceMappingURL=Button.css.map */
+Backtrace:
+Button.scss:13
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/tree/variable.rb:49:in `_perform'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `map'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `map'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:159:in `visit'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:36:in `css_tree'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:331:in `block in watch'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+/var/lib/gems/2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$colordefault\".\A         on line 13 of Button.scss\A \A 8: $widthDefault : 12em;\A 9: \A 10: .ButtonDefault{\A 11:   background-color: $bcolorgrey;\A 12:   padding: 5px;\A 13:   color : $colordefault;\A 14:   font-weight: $fontWeightDefault;\A 15:   border-radius: 4px;\A 16:   border-color: $borderColorDefault;\A 17:   width: 12em; //$widthDefault\A 18:   height: 4em; //$heightDefault"; }
