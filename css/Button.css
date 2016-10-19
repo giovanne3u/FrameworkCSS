@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$colordefault".
-        on line 13 of Button.scss
+        on line 35 of Button.scss
 
-8: $widthDefault : 12em;
-9: 
-10: .ButtonDefault{
-11:   background-color: $bcolorgrey;
-12:   padding: 5px;
-13:   color : $colordefault;
-14:   font-weight: $fontWeightDefault;
-15:   border-radius: 4px;
-16:   border-color: $borderColorDefault;
-17:   width: 12em; //$widthDefault
-18:   height: 4em; //$heightDefault
+30: $widthFancy : 12em;
+31: 
+32: .ButtonDefault{
+33:   background-color: $bcolorDefault;
+34:   padding: 5px;
+35:   color : $colordefault;
+36:   font-weight: $fontWeightDefault;
+37:   border-radius: 4px;
+38:   border-color: $borderColorDefault;
+39:   width: $widthDefault;
+40:   height: $heightDefault;
 
 Backtrace:
-Button.scss:13
+Button.scss:35
 /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/tree/variable.rb:49:in `_perform'
 /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
 /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
@@ -65,4 +65,4 @@ Button.scss:13
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$colordefault\".\A         on line 13 of Button.scss\A \A 8: $widthDefault : 12em;\A 9: \A 10: .ButtonDefault{\A 11:   background-color: $bcolorgrey;\A 12:   padding: 5px;\A 13:   color : $colordefault;\A 14:   font-weight: $fontWeightDefault;\A 15:   border-radius: 4px;\A 16:   border-color: $borderColorDefault;\A 17:   width: 12em; //$widthDefault\A 18:   height: 4em; //$heightDefault"; }
+  content: "Error: Undefined variable: \"$colordefault\".\A         on line 35 of Button.scss\A \A 30: $widthFancy : 12em;\A 31: \A 32: .ButtonDefault{\A 33:   background-color: $bcolorDefault;\A 34:   padding: 5px;\A 35:   color : $colordefault;\A 36:   font-weight: $fontWeightDefault;\A 37:   border-radius: 4px;\A 38:   border-color: $borderColorDefault;\A 39:   width: $widthDefault;\A 40:   height: $heightDefault;"; }

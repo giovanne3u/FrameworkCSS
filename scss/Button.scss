@@ -1,21 +1,43 @@
 $bcolorgrey : #c2bfb0;
 $bcolorblack : black;
-$bcolorDefault : white;
+
+$bcolorDefault : grey;
+$bcolorSmall: white;
+$bcolorLarge: white;
+$bcolorFlat: white;
+
 $colorDefault : black;
+$colorSmall: black;
+$colorLarge: black;
+$colorFlat: black;
+
 $borderColorDefault : red;
+$borderColorSmall : red;
+$borderColorLarge : red;
+
 $fontWeightDefault : bold;
+$fontWeightSmall : bold;
+$fontWeightLarge : bold;
+
 $heightDefault : 4em;
+$heightSmall : 2em;
+$heightLarge : 8em;
+$heightFancy : 4em;
+
 $widthDefault : 12em;
+$widthSmall : 6em;
+$widthLarge : 24em;
+$widthFancy : 12em;
 
 .ButtonDefault{
-  background-color: $bcolorgrey;
+  background-color: $bcolorDefault;
   padding: 5px;
   color : $colordefault;
   font-weight: $fontWeightDefault;
   border-radius: 4px;
   border-color: $borderColorDefault;
-  width: 12em; //$widthDefault
-  height: 4em; //$heightDefault
+  width: $widthDefault;
+  height: $heightDefault;
 }
 .ButtonDefault:active{
   background-color: $bcolorDefault;
@@ -27,39 +49,39 @@ $widthDefault : 12em;
 }
 
 .ButtonSmall{
-  background-color: $bcolorDefault;
+  background-color: $bcolorSmall;
   padding: 5px;
-  color : $colorDefault;
-  font-weight: $fontWeightDefault;
+  color : $colorSmall;
+  font-weight: $fontWeightSmall;
   border-radius: 4px;
-  border-color: $borderColorDefault;
-  width: 6em; //$widthDefault
-  height: 2em; //$heightDefault
+  border-color: $borderColorSmall;
+  width: $widthSmall;
+  height: $heightSmall;
 
 }
 .ButtonSmall:active{
-  background-color: $bcolorDefault;
-  border-color: $borderColorDefault;
-  color: $colordefault;
+  background-color: $bcolorSmall;
+  border-color: $borderColorSmall;
+  color: $colorSmall;
 }
 .ButtonSmall:hover{
   cursor:pointer;
 }
 
 .ButtonLarge{
-  background-color: $bcolorDefault;
+  background-color: $bcolorLarge;
   padding: 5px;
-  color : $colorDefault;
-  font-weight: $fontWeightDefault;
+  color : $colorLarge;
+  font-weight: $fontWeightLarge;
   border-radius: 4px;
-  border-color: $borderColorDefault;
-  width: 24em; //$widthDefault
-  height: 8em; //$heightDefault
+  border-color: $borderColorLarge;
+  width: $widthLarge;
+  height: $heightLarge;
 }
 .ButtonLarge:active{
-  background-color: $bcolorDefault;
-  border-color: $borderColorDefault;
-  color: $colorDefault;
+  background-color: $bcolorLarge;
+  border-color: $borderColorLarge;
+  color: $colorLarge;
 }
 .ButtonLarge:hover{
   cursor:pointer;
@@ -67,8 +89,8 @@ $widthDefault : 12em;
 
 .ButtonFlat{
   border:none;
-  background-color: $bcolorDefault;
-  color:$colorDefault;
+  background-color: $bcolorFlat;
+  color:$colorFlat;
 }
 
 .ButtonFullContainer{
@@ -79,8 +101,8 @@ $widthDefault : 12em;
   box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.5);
   background: radial-gradient(red,blue);
   border-bottom: 5px solid blue;
-  width: 12em; //$widthDefault
-  height: 4em; //$heightDefault
+  width: $widthFancy;
+  height: $heightFancy;
 }
 .ButtonFancy:active{
   border-bottom: 1px solid blue;
