@@ -105,54 +105,76 @@ input, select {
 
 /*********Début Exo2 **********/
 
+
+/** Color variables **/
+
+$colorDefault : black;
+$smallColorDefault : gray;
+$pColorDefault : red;
+$backgroundColorDefault : gold;
+
+/** Font variables **/
+
+$fontDefault : Arial;
+$fontCodeDefault : Courrier, monospace;
+$largeFontSizeDefault : large;
+$mediumFontSizeDefault : medium;
+$smallFontSizeDefault : small;
+
+$PrFontSizeDefault : 60%;
+$PxFontSizeDefault : 50px;
+
+$fontWeightDefault : bold;
+$fontStyleDefault : italic;
+
 h1,h2,h3,h4,h5,h6{
-  color : black;
+  color : $colorDefault;
   font-weight: bold;
-  font-family: Arial;
+  font-family: $fontDefault;
 }
 
 h1{
-  font-size: xx-large;
+  font-size: xx-+$largeFontSizeDefault;
 }
 
 h2{
-  font-size: x-large;
+  font-size: x-+$largeFontSizeDefault;
 }
 
 h3{
-  font-size: large;
+  font-size: $largeFontSizeDefault;
 }
 
 h4{
-  font-size: medium;
+  font-size: $mediumFontSizeDefault;
 }
 
 h5{
-  font-size: small;
+  font-size: $smallFontSizeDefault;
 }
 
 h6{
-  font-size: x-small;
+  font-size: x-+$smallFontSizeDefault;
 }
 
 small{
-  color :gray;
-  font-size: 60%;
+  color : $smallColorDefault;
+  font-size: $PrFontSizeDefault;
 }
 
 .sub{
-  color :gray;
-  font-size: 60%;
+  color : $smallColorDefault;
+  font-size: $PrFontSizeDefault;
 }
 
 body p{
-  margin-bottom: 50px;
-  color : red;
+  margin-bottom: $PxFontSizeDefault;
+  color : $pColorDefault;
 }
 
 mark{
-  font-weight: bold;
-  background-color: gold ;
+  font-weight: $fontWeightDefault;
+  background-color: $backgroundColorDefault ;
 }
 
 del{
@@ -160,7 +182,7 @@ del{
 }
 
 ins{
-  background-color: gold;
+  background-color: $backgroundColorDefault;
 }
 
 u{
@@ -168,20 +190,20 @@ u{
 }
 
 strong{
-  font-weight:bold;
+  font-weight: $fontWeightDefault;
 }
 
 em{
-  font-style: italic;
+  font-style: $fontStyleDefault;
 }
 
 blockquote{
-  font-style: italic;
+  font-style: $fontStyleDefault;
   font-weight: 100;
 }
 
 code{
-  font-family: Courier,monospace;
+  font-family: $fontCodeDefault;
 }
 
 .sanspuce{
@@ -221,7 +243,7 @@ table , th, td{
   border-collapse: collapse;
 
   th{
-    font-weight: bold;
+    font-weight: $fontWeightDefault;
     padding: 2px;
   }
   td{
