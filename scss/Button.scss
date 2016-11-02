@@ -5,6 +5,8 @@ $bcolorDefault : grey;
 $bcolorSmall: white;
 $bcolorLarge: white;
 $bcolorFlat: white;
+$bcolorFancy1: red;
+$bcolorFancy2: blue;
 
 $colorDefault : black;
 $colorSmall: black;
@@ -14,6 +16,7 @@ $colorFlat: black;
 $borderColorDefault : red;
 $borderColorSmall : red;
 $borderColorLarge : red;
+$borderColorFancy : blue;
 
 $fontWeightDefault : bold;
 $fontWeightSmall : bold;
@@ -99,11 +102,11 @@ $widthFancy : 12em;
 
 .ButtonFancy{
   box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.5);
-  background: radial-gradient(red,blue);
-  border-bottom: 5px solid blue;
+  background: radial-gradient($bcolorFancy1,$bcolorFancy2);
+  border-bottom: 5px solid $borderColorFancy;
   width: $widthFancy;
   height: $heightFancy;
 }
 .ButtonFancy:active{
-  border-bottom: 1px solid blue;
+  border-bottom: 1px solid $borderColorFancy;
 }
