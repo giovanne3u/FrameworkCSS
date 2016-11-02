@@ -9,6 +9,10 @@ $tailleColonnes : 100-($nbColonnes*$tailleGoutiere);
 $propTotalColonnes : percentage(100-($nbColonnes*$tailleGoutiere))/100;
 $propUniqueColonne : percentage($tailleColonnes/$nbColonnes)/100;
 
+$tailleBorder: 2px;
+$typeBorder : solid;
+$colorBorder : black;
+
 
 .grid{
   &>.raw{
@@ -23,41 +27,41 @@ $propUniqueColonne : percentage($tailleColonnes/$nbColonnes)/100;
 
     &>.span1{
       width: $propUniqueColonne;
-      border: 2px solid black;
+      border: $tailleBorder $typeBorder $colorBorder;
     }
 
     &>.span2{
       width: $propUniqueColonne*2+$marginGoutiere;
-      border: 2px solid black;
+      border: $tailleBorder $typeBorder $colorBorder;
     }
     &>.span3{
       width: $propUniqueColonne*3+$marginGoutiere*2;
-      border: 2px solid black;
+      border: $tailleBorder $typeBorder $colorBorder;
     }
 
     &>.span4{
       width: $propUniqueColonne*4+$marginGoutiere*3;
-      border: 2px solid black;
+      border: $tailleBorder $typeBorder $colorBorder;
     }
 
     &>.span5{
       width: $propUniqueColonne*5+$marginGoutiere*4;
-      border: 2px solid black;
+      border: $tailleBorder $typeBorder $colorBorder;
     }
 
     &>.span6{
       width: $propUniqueColonne*6+$marginGoutiere*5;
-      border: 2px solid black;
+      border: $tailleBorder $typeBorder $colorBorder;
     }
 
     &>.span7{
       width: $propUniqueColonne*7+$marginGoutiere*6;
-      border: 2px solid black;
+      border: $tailleBorder $typeBorder $colorBorder;
     }
 
     &>.span8{
       width: $propUniqueColonne*8+$marginGoutiere*7;
-      border: 2px solid black;
+      border: $tailleBorder $typeBorder $colorBorder;
     }
 
     &>.offset1{
