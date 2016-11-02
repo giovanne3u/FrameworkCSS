@@ -1,0 +1,16 @@
+@import "alert";
+$margin : 15px;
+$padding : 20px;
+$color : white;
+$fontSize : 22px;
+$lineHeight : 20px;
+$cursor : pointer;
+$fontWeight : bold;
+$dangerBackgroundColor : #f44336; /* Red */
+$successBackgroundColor : #3beb2b; /* Green */
+$infoBackgroundColor : #2bd5eb; /* Blue */
+$warningBackgroundColor : #efc71a; /* Orange */
+
+.alert {
+  @include _alert($margin, $padding, $color, $fontSize, $lineHeight, $cursor, $fontWeight, $dangerBackgroundColor, $successBackgroundColor, $infoBackgroundColor, $warningBackgroundColor);
+}

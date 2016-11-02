@@ -1,0 +1,42 @@
+@mixin _alert($margin, $padding, $color, $fontSize, $lineHeight, $cursor, $fontWeight, $dangerBackgroundColor, $successBackgroundColor, $infoBackgroundColor, $warningBackgroundColor){
+
+
+      padding: $padding;
+
+      color: $color;
+      margin-bottom: $margin;
+
+      .closebtn {
+      margin-left: $margin;
+      color: $color;
+      font-weight: $fontWeight;
+      float: right;
+      font-size: $fontSize;
+      line-height: $lineHeight;
+      cursor: $cursor;
+      transition: 0.3s;
+      }
+
+      .closebtn:hover {
+          color: black;
+      }
+  
+
+  .danger{
+      background-color: $dangerBackgroundColor;
+  }
+
+  .success{
+    background-color:  $successBackgroundColor;
+  }
+
+  .info{
+    background-color: $infoBackgroundColor;
+  }
+
+  .warning{
+    background-color:  $warningBackgroundColor;
+  }
+
+
+}

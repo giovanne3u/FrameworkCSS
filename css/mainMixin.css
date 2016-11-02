@@ -1,0 +1,29 @@
+/* Red */
+/* Green */
+/* Blue */
+/* Orange */
+.alert {
+  padding: 20px;
+  color: white;
+  margin-bottom: 15px; }
+  .alert .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s; }
+  .alert .closebtn:hover {
+    color: black; }
+  .alert .danger {
+    background-color: #f44336; }
+  .alert .success {
+    background-color: #3beb2b; }
+  .alert .info {
+    background-color: #2bd5eb; }
+  .alert .warning {
+    background-color: #efc71a; }
+
+/*# sourceMappingURL=mainMixin.css.map */

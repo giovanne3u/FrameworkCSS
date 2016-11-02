@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page de test framework css</title>
+    <link rel="stylesheet" href="css/typo.css">
+    <link rel="stylesheet" href="css/Button.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/jumbotron.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/breadcrumbs.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="mixin/mainMixin.css">
+</head>
+<body>
+
+
+  <!--  Test des typos  -->
+  <h1>Test des typos</h1> <br><br><br>
+<h1>H1</h1>
+<h2>H2</h2>
+<h3>H3</h3>
+<h4>H4</h4>
+<h5>H5</h5>
+<h6>H6</h6>
+<small>Small</small>
+<h3 class="sub">Subtitel</h3>
+
+<p> Paragraphe</p>
+<p> <mark>Paragraphe avec mark</mark> </p>
+<p> <del>Paragraphe avec del</del></p>
+<p> <ins>Paragraphe avec ins</ins></p>
+<p> <u>Paragraphe avec u</u></p>
+<p> <strong>Paragraphe avec strong</strong></p>
+<p> <em>Paragraphe avec em</em></p>
+ <blockquote>Paragraphe avec blockquote</blockquote>
+
+
+<table class="tableDefault tableAlternate tableFullBorder tableLineHover">
+    <tr>
+        <th>col1</th>
+        <th>col2</th>
+    </tr>
+    <tr>
+        <td>val1</td>
+        <td>val2</td>
+    </tr>
+    <tr>
+        <td>val1</td>
+        <td>val2</td>
+    </tr>
+
+</table>
+<br><br><br>
+<!--  Test des boutons  -->
+
+<hr>
+<h1>Test des boutons</h1> <br><br><br>
+
+<button class="ButtonDefault">Default Button</button>
+<button class="ButtonSmall">Small</button>
+<button class="ButtonLarge">LARGE</button>
+<button class="ButtonFlat">Flat Button</button>
+<div>
+    <button class="ButtonDefault ButtonFullContainer">Full Button</button>
+</div>
+<button class="ButtonFancy">Fancy Button</button>
+<br><br><br>
+
+<!--  Test des alerts  -->
+<hr>
+<h1>Test des alertes</h1> <br><br><br>
+
+<div class="alert danger">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+  Danger! Indicates a dangerous or potentially negative action.
+</div>
+
+<div class="alert success">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+  Success! Indicates a successful or positive action.
+</div>
+
+<div class="alert info">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+  Info! Indicates a neutral informative change or action.
+</div>
+
+<div class="alert warning">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+  Warning! Indicates a warning that might need attention.
+</div>
+
+
+<br><br><br>
+
+<!--  Test header  -->
+<hr>
+
+<header> Le bon header de test </header>
+
+<br><br><br>
+
+<!--  Test du jumbotron  -->
+
+<hr>
+
+<div class="jumbotron">
+  <h1>Le Jumbotron de test</h1>
+  <br>
+  <p>Etiam lacinia ante at nunc varius, sed cursus enim lacinia. Praesent efficitur augue nunc, vitae consectetur tortor bibendum sit amet. Quisque vitae erat et tortor elementum luctus sed nec quam. Aenean placerat leo consectetur ipsum pharetra, sed tristique quam vulputate.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<p>
+  <button class="ButtonDefault">Default Button</button>
+</div>
+
+<br><br><br>
+
+<!--  Test barre de navigation flex  -->
+
+<hr>
+
+<nav class="navbar">
+    <ul>
+        <li><a href="#">maison</a></li>
+        <li><a href="#">niche</a></li>
+        <li><a href="#">garage</a></li>
+        <li><a href="#">bistrot</a></li>
+    </ul>
+</nav>
+
+<br><br><br>
+
+<!--  Test fil d'ariane   -->
+
+<hr>
+
+<h1>Test du fil d'ariane</h1><br><br><br>
+
+<ul class="breadcrumbs-one">
+    <li><a href="">Lorem ipsum</a></li>
+    <li><a href="">Vivamus nisi eros</a></li>
+    <li><a href="">Nulla sed lorem risus</a></li>
+    <li><a href="">Nam iaculis commodo</a></li>
+    <li><a href="" class="current">Current crumb</a></li>
+</ul>
+
+<br><br><br>
+
+<!--  Test grille   -->
+<hr>
+
+<h1>Test de la grille</h1><br><br><br>
+
+<div class="grid">
+
+    <div class="raw">
+      <section class="span1">In dapibus, sem a dignissim suscipit</section>
+      <section class="span1">In dapibus, sem a dignissim suscipit</section>
+      <section class="span1">In dapibus, sem a dignissim suscipit</section>
+      <section class="span1">In dapibus, sem a dignissim suscipit</section>
+      <section class="span1">In dapibus, sem a dignissim suscipit</section>
+      <section class="span1">In dapibus, sem a dignissim suscipit</section>
+      <section class="span1">In dapibus, sem a dignissim suscipit</section>
+      <section class="span1">In dapibus, sem a dignissim suscipit</section>
+    </div>
+    <div class="raw">
+      <section class="span1">In dapibus, sem a dignissim suscipit</section>
+      <section class="span3">In dapibus, sem a dignissim suscipit</section>
+      <section class="span2 offset1">In dapibus, sem a dignissim suscipit</section>
+    </div>
+
+    <div class="raw">
+      <section class="span1">In dapibus, sem a dignissim suscipit</section>
+      <section class="span3">In dapibus, sem a dignissim suscipit</section>
+      <section class="span1 offset2">In dapibus, sem a dignissim suscipit</section>
+    </div>
+    <div class="raw">
+      <section class="span4">In dapibus, sem a dignissim suscipit</section>
+      <section class="span2">In dapibus, sem a dignissim suscipit</section>
+      <section class="span1 offset1">In dapibus, sem a dignissim suscipit</section>
+    </div>
+    <div class="raw">
+      <section class="span1 offset4">In dapibus, sem a dignissim suscipit</section>
+      <section class="span3">In dapibus, sem a dignissim suscipit</section>
+    </div>
+    <div class="raw">
+      <section class="span5 offset2">In dapibus, sem a dignissim suscipit</section>
+    </div>
+    <div class="raw">
+      <section class="span7 offset1">In dapibus, sem a dignissim suscipit</section>
+    </div>
+    <div class="raw">
+      <section class="span8">In dapibus, sem a dignissim suscipit</section>
+    </div>
+  </div>
+
+
+</body>
+</html>
