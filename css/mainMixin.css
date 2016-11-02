@@ -17,13 +17,14 @@
     transition: 0.3s; }
   .alert .closebtn:hover {
     color: black; }
-  .alert .danger {
-    background-color: #f44336; }
-  .alert .success {
-    background-color: #3beb2b; }
-  .alert .info {
-    background-color: #2bd5eb; }
-  .alert .warning {
-    background-color: #efc71a; }
+
+body .danger {
+  background-color: #f44336; }
+body .success {
+  background-color: #3beb2b; }
+body .info {
+  background-color: #2bd5eb; }
+body .warning {
+  background-color: #efc71a; }
 
 /*# sourceMappingURL=mainMixin.css.map */

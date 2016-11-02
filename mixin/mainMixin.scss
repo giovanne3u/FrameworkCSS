@@ -12,5 +12,12 @@ $infoBackgroundColor : #2bd5eb; /* Blue */
 $warningBackgroundColor : #efc71a; /* Orange */
 
 .alert {
-  @include _alert($margin, $padding, $color, $fontSize, $lineHeight, $cursor, $fontWeight, $dangerBackgroundColor, $successBackgroundColor, $infoBackgroundColor, $warningBackgroundColor);
+  @include _alert($margin, $padding, $color, $fontSize, $lineHeight, $cursor, $fontWeight);
+}
+
+body{
+  @include _alertDanger($dangerBackgroundColor);
+  @include _alertSuccess($successBackgroundColor);
+  @include _alertInfo($infoBackgroundColor);
+  @include _alertWarning($warningBackgroundColor);
 }
