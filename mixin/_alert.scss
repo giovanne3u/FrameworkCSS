@@ -1,4 +1,4 @@
-@mixin _alert($margin, $padding, $color, $fontSize, $lineHeight, $cursor, $fontWeight, $dangerBackgroundColor, $successBackgroundColor, $infoBackgroundColor, $warningBackgroundColor){
+@mixin _alert($margin, $padding, $color, $fontSize, $lineHeight, $cursor, $fontWeight){
 
 
       padding: $padding;
@@ -20,23 +20,28 @@
       .closebtn:hover {
           color: black;
       }
-  
+}
 
+@mixin _alertDanger($dangerBackgroundColor) {
   .danger{
       background-color: $dangerBackgroundColor;
   }
+}
 
+@mixin _alertSuccess($successBackgroundColor) {
   .success{
     background-color:  $successBackgroundColor;
   }
+}
 
+@mixin _alertInfo($infoBackgroundColor) {
   .info{
     background-color: $infoBackgroundColor;
   }
+}
 
-  .warning{
-    background-color:  $warningBackgroundColor;
-  }
-
-
+@mixin _alertWarning($warningBackgroundColor){
+    .warning{
+      background-color:  $warningBackgroundColor;
+    }
 }
