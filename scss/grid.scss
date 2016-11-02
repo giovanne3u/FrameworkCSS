@@ -2,82 +2,90 @@
   A réécrire avec des variables;
 */
 
+$nbColonnes : 8;
+$tailleGoutiere : 2;
+$marginGoutiere : percentage($tailleGoutiere)/100;
+$tailleColonnes : 100-($nbColonnes*$tailleGoutiere);
+$propTotalColonnes : percentage(100-($nbColonnes*$tailleGoutiere))/100;
+$propUniqueColonne : percentage($tailleColonnes/$nbColonnes)/100;
+
+
 .grid{
   &>.raw{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin-bottom: 2%;
+    margin-bottom: $marginGoutiere;
     [class*="span"]{
       box-sizing: border-box;
-      margin-left: 2%;
+      margin-left: $marginGoutiere;
     }
 
     &>.span1{
-      width: 10.5%;
+      width: $propUniqueColonne;
       border: 2px solid black;
     }
 
     &>.span2{
-      width: 23%;
+      width: $propUniqueColonne*2+$marginGoutiere;
       border: 2px solid black;
     }
     &>.span3{
-      width: 35.5%;
+      width: $propUniqueColonne*3+$marginGoutiere*2;
       border: 2px solid black;
     }
 
     &>.span4{
-      width: 48%;
+      width: $propUniqueColonne*4+$marginGoutiere*3;
       border: 2px solid black;
     }
 
     &>.span5{
-      width: 60.5%;
+      width: $propUniqueColonne*5+$marginGoutiere*4;
       border: 2px solid black;
     }
 
     &>.span6{
-      width: 73%;
+      width: $propUniqueColonne*6+$marginGoutiere*5;
       border: 2px solid black;
     }
 
     &>.span7{
-      width: 85.5%;
+      width: $propUniqueColonne*7+$marginGoutiere*6;
       border: 2px solid black;
     }
 
     &>.span8{
-      width: 98%;
+      width: $propUniqueColonne*8+$marginGoutiere*7;
       border: 2px solid black;
     }
 
     &>.offset1{
-      margin-left: 14.5%;
+      margin-left: $propUniqueColonne+$marginGoutiere*2;
     }
 
     &>.offset2{
-      margin-left: 27%;
+      margin-left: $propUniqueColonne*2+$marginGoutiere*3;
     }
 
     &>.offset3{
-      margin-left: 39.5%;
+      margin-left: $propUniqueColonne*3+$marginGoutiere*4;
     }
 
     &>.offset4{
-      margin-left: 52%;
+      margin-left: $propUniqueColonne*4+$marginGoutiere*5;
     }
 
     &>.offset5{
-      margin-left: 64.5%;
+      margin-left: $propUniqueColonne*5+$marginGoutiere*6;
     }
 
     &>.offset6{
-      margin-left: 77%;
+      margin-left: $propUniqueColonne*6+$marginGoutiere*7;
     }
 
     &>.offset7{
-      margin-left: 89.5%;
+      margin-left: $propUniqueColonne*7+$marginGoutiere*8;
     }
   }
 }
