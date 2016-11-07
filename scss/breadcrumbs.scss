@@ -1,3 +1,10 @@
+$borderColor1: #f5f5f5;
+$borderColor2: #e5e5e5;
+$borderColor2: #ccc;
+
+$backColor: #eee;
+
+
 ul{
   margin: 0;
   padding: 0;
@@ -5,10 +12,10 @@ ul{
 }
 
 .breadcrumbs-one{
-  background: #eee;
+  background: $backColor;
   border-width: 1px;
   border-style: solid;
-  border-color: #f5f5f5 #e5e5e5 #ccc;
+  border-color: $borderColor1 $borderColor2 $borderColor3;
   border-radius: 5px;
   box-shadow: 0 0 2px rgba(0,0,0,.2);
   overflow: hidden;
