@@ -18,3 +18,71 @@
     cursor:pointer;
   }
 }
+
+@mixin _buttonSmall($bcolorSmall, $colorSmall, $fontWeightSmall, $borderColorSmall, $widthSmall, $heightSmall){
+  .ButtonSmall{
+    background-color: $bcolorSmall;
+    padding: 5px;
+    color : $colorSmall;
+    font-weight: $fontWeightSmall;
+    border-radius: 4px;
+    border-color: $borderColorSmall;
+    width: $widthSmall;
+    height: $heightSmall;
+
+  }
+  .ButtonSmall:active{
+    background-color: $bcolorSmall;
+    border-color: $borderColorSmall;
+    color: $colorSmall;
+  }
+  .ButtonSmall:hover{
+    cursor:pointer;
+  }
+}
+
+@mixin _buttonLarge($bcolorLarge, $colorLarge, $fontWeightLarge, $borderColorLarge, $widthLarge, $heightLarge){
+  .ButtonLarge{
+    background-color: $bcolorLarge;
+    padding: 5px;
+    color : $colorLarge;
+    font-weight: $fontWeightLarge;
+    border-radius: 4px;
+    border-color: $borderColorLarge;
+    width: $widthLarge;
+    height: $heightLarge;
+  }
+  .ButtonLarge:active{
+    background-color: $bcolorLarge;
+    border-color: $borderColorLarge;
+    color: $colorLarge;
+  }
+  .ButtonLarge:hover{
+    cursor:pointer;
+  }
+}
+
+@mixin _buttonFlat($bcolorFlat, $colorFlat){
+  .ButtonFlat{
+    border:none;
+    background-color: $bcolorFlat;
+    color:$colorFlat;
+  }
+
+  .ButtonFullContainer{
+    width: 100%;
+  }
+}
+
+@mixin _buttonFancy($bcolorFancy1, $bcolorFancy2, $borderColorFancy, $widthFancy, $heightFancy){
+  .ButtonFancy{
+    box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.5);
+    background: radial-gradient($bcolorFancy1,$bcolorFancy2);
+    border-bottom: 5px solid $borderColorFancy;
+    width: $widthFancy;
+    height: $heightFancy;
+  }
+  .ButtonFancy:active{
+    border-bottom: 1px solid $borderColorFancy;
+  }
+}
