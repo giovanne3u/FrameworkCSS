@@ -12,9 +12,9 @@ $successBackgroundColor : #3beb2b; /* Green */
 $infoBackgroundColor : #2bd5eb; /* Blue */
 $warningBackgroundColor : #efc71a; /* Orange */
 
-$bcolorDefault : green;
-$widthDefault : 35%;
-$colorDefault : black;
+$bcolorJumbo : green;
+$widthJumbo : 35%;
+$colorJumbo : black;
 
 .alert {
   @include _alert($margin, $padding, $color, $fontSize, $lineHeight, $cursor, $fontWeight);
@@ -25,5 +25,5 @@ body{
   @include _alertSuccess($successBackgroundColor);
   @include _alertInfo($infoBackgroundColor);
   @include _alertWarning($warningBackgroundColor);
-  @include _jumbotron($bcolorDefault, $widthDefault, $colorDefault);
+  @include _jumbotron($bcolorJumbo, $widthJumbo, $colorJumbo);
 }

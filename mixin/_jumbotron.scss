@@ -1,11 +1,11 @@
-@mixin _jumbotron($bcolorDefault, $widthDefault, $colorDefault){
+@mixin _jumbotron($bcolorJumbo, $widthJumbo, $colorJumbo){
   .jumbotron{
     box-sizing:border-box;
-    background-color: $bcolorDefault;
+    background-color: $bcolorJumbo;
     padding: 1.5em;
-    width: $widthDefault;
+    width: $widthJumbo;
     p{
-      color: $colorDefault;
+      color: $colorJumbo;
     }
   }
 }

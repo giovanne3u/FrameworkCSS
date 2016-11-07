@@ -1,0 +1,20 @@
+@mixin _buttonDefault($bcolorDefault, $colorDefault, $fontWeightDefault, $borderColorDefault, $widthDefault, $heightDefault){
+  .ButtonDefault{
+    background-color: $bcolorDefault;
+    padding: 5px;
+    color : $colorDefault;
+    font-weight: $fontWeightDefault;
+    border-radius: 4px;
+    border-color: $borderColorDefault;
+    width: $widthDefault;
+    height: $heightDefault;
+  }
+  .ButtonDefault:active{
+    background-color: $bcolorDefault;
+    border-color: $borderColorDefault;
+    color: $colorDefault;
+  }
+  .ButtonDefault:hover{
+    cursor:pointer;
+  }
+}
