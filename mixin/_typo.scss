@@ -1,0 +1,190 @@
+@mixin _h1($largeFontSizeDefault){
+  h1 {
+    font-size: xx-+$largeFontSizeDefault;
+  }
+}
+
+@mixin _h2($largeFontSizeDefault){
+  h2 {
+    font-size: x-+$largeFontSizeDefault;
+  }
+}
+
+@mixin _h3($largeFontSizeDefault){
+  h3 {
+    font-size: $largeFontSizeDefault;
+  }
+}
+
+@mixin _h4($mediumFontSizeDefault){
+  h4 {
+    font-size: $mediumFontSizeDefault;
+  }
+}
+
+@mixin _h5($smallFontSizeDefault){
+  h5 {
+    font-size: $smallFontSizeDefault;
+  }
+}
+
+@mixin _h6($smallFontSizeDefault){
+  h6 {
+    font-size: x-+$smallFontSizeDefault;
+  }
+}
+
+@mixin _small($smallColorDefault, $PrFontSizeDefault){
+  small{
+    color : $smallColorDefault;
+    font-size: $PrFontSizeDefault;
+  }
+}
+
+@mixin _sub($smallColorDefault, $PrFontSizeDefault){
+  .sub{
+    color : $smallColorDefault;
+    font-size: $PrFontSizeDefault;
+  }
+}
+
+@mixin _p($PxFontSizeDefault, $pColorDefault){
+  p{
+    margin-bottom: $PxFontSizeDefault;
+    color : $pColorDefault;
+  }
+}
+
+@mixin _mark($fontWeightDefault, $backgroundColorDefault){
+  mark{
+    font-weight: $fontWeightDefault;
+    background-color: $backgroundColorDefault ;
+  }
+}
+
+@mixin _del() {
+  del{
+    text-decoration: line-through;
+  }
+}
+
+@mixin _ins($backgroundColorDefault){
+  ins{
+    background-color: $backgroundColorDefault;
+  }
+}
+
+@mixin _u(){
+  u{
+    text-decoration: underline;
+  }
+}
+
+@mixin _strong($fontWeightDefault){
+  strong{
+    font-weight: $fontWeightDefault;
+  }
+}
+
+@mixin _em($fontStyleDefault){
+  em{
+    font-style: $fontStyleDefault;
+  }
+}
+
+@mixin _blockquote($fontStyleDefault){
+  blockquote{
+    font-style: $fontStyleDefault;
+    font-weight: 100;
+  }
+}
+
+@mixin _code($fontCodeDefault){
+  code{
+    font-family: $fontCodeDefault;
+  }
+}
+
+@mixin _sanspuce(){
+  .sanspuce{
+    list-style-type: none;
+  }
+}
+
+@mixin _puceCarre(){
+  .puceCarre{
+    list-style-type: square;
+  }
+}
+
+@mixin _textLeft(){
+  .textLeft{
+    text-align: left;
+  }
+}
+
+@mixin _textRight(){
+  .textRight{
+    text-align: right;
+  }
+}
+
+@mixin _textCenter() {
+  .textCenter{
+    text-align: center;
+  }
+}
+
+@mixin _textJustify(){
+  .textJustify{
+    text-align: justify;
+  }
+}
+
+@mixin _uppercase(){
+  .uppercase{
+    text-transform: uppercase;
+  }
+}
+
+@mixin _lowercase(){
+  .lowercase{
+    text-transform: lowercase;
+  }
+}
+
+@mixin _tableDefault($fontWeightDefault){
+  .tableDefault{
+    border-collapse: collapse;
+
+    th{
+      font-weight: $fontWeightDefault;
+      padding: 2px;
+    }
+    td{
+      padding: 2px;
+    }
+  }
+}
+
+@mixin _tableAlternate(){
+  .tableAlternate{
+    tr:nth-of-type(2n){
+      background-color: #ffff99;
+    }
+  }
+}
+
+@mixin _tableFullBorder(){
+  .tableFullBorder{
+    border: 2px solid black;
+  }
+}
+
+@mixin _tableLineHover(){
+  .tableLineHover{
+    tr:hover{
+      background-color: aqua;
+    }
+  }
+}
