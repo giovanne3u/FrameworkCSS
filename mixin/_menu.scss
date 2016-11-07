@@ -1,6 +1,5 @@
 @mixin _menu($listStyle, $display, $flexDirection, $justifyContent, $flexWrap, $width, $height, $backgroundColor, $borderSize, $borderStyle, $borderColor, $alignItems, $textDecoration, $color, $fontWeight){
 
-  .navbar{
     ul{
       list-style: $listStyle;
       display: $display;
@@ -22,5 +21,4 @@
         }
       }
     }
-  }
 }

@@ -1,0 +1,86 @@
+@mixin _grid($nbColonnes, $tailleGoutiere, $tailleBorder, $typeBorder, $colorBorder){
+
+
+  $marginGoutiere : percentage($tailleGoutiere)/100;
+  $tailleColonnes : 100-($nbColonnes*$tailleGoutiere);
+  $propTotalColonnes : percentage(100-($nbColonnes*$tailleGoutiere))/100;
+  $propUniqueColonne : percentage($tailleColonnes/$nbColonnes)/100;
+
+  &>.raw{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: $marginGoutiere;
+    [class*="span"]{
+      box-sizing: border-box;
+      margin-left: $marginGoutiere;
+    }
+
+    &>.span1{
+      width: $propUniqueColonne;
+      border: $tailleBorder $typeBorder $colorBorder;
+    }
+
+    &>.span2{
+      width: $propUniqueColonne*2+$marginGoutiere;
+      border: $tailleBorder $typeBorder $colorBorder;
+    }
+    &>.span3{
+      width: $propUniqueColonne*3+$marginGoutiere*2;
+      border: $tailleBorder $typeBorder $colorBorder;
+    }
+
+    &>.span4{
+      width: $propUniqueColonne*4+$marginGoutiere*3;
+      border: $tailleBorder $typeBorder $colorBorder;
+    }
+
+    &>.span5{
+      width: $propUniqueColonne*5+$marginGoutiere*4;
+      border: $tailleBorder $typeBorder $colorBorder;
+    }
+
+    &>.span6{
+      width: $propUniqueColonne*6+$marginGoutiere*5;
+      border: $tailleBorder $typeBorder $colorBorder;
+    }
+
+    &>.span7{
+      width: $propUniqueColonne*7+$marginGoutiere*6;
+      border: $tailleBorder $typeBorder $colorBorder;
+    }
+
+    &>.span8{
+      width: $propUniqueColonne*8+$marginGoutiere*7;
+      border: $tailleBorder $typeBorder $colorBorder;
+    }
+
+    &>.offset1{
+      margin-left: $propUniqueColonne+$marginGoutiere*2;
+    }
+
+    &>.offset2{
+      margin-left: $propUniqueColonne*2+$marginGoutiere*3;
+    }
+
+    &>.offset3{
+      margin-left: $propUniqueColonne*3+$marginGoutiere*4;
+    }
+
+    &>.offset4{
+      margin-left: $propUniqueColonne*4+$marginGoutiere*5;
+    }
+
+    &>.offset5{
+      margin-left: $propUniqueColonne*5+$marginGoutiere*6;
+    }
+
+    &>.offset6{
+      margin-left: $propUniqueColonne*6+$marginGoutiere*7;
+    }
+
+    &>.offset7{
+      margin-left: $propUniqueColonne*7+$marginGoutiere*8;
+    }
+  }
+}
