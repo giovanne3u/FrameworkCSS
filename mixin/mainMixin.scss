@@ -1,4 +1,5 @@
 @import "alert";
+@import "jumbotron";
 $margin : 15px;
 $padding : 20px;
 $color : white;
@@ -11,6 +12,10 @@ $successBackgroundColor : #3beb2b; /* Green */
 $infoBackgroundColor : #2bd5eb; /* Blue */
 $warningBackgroundColor : #efc71a; /* Orange */
 
+$bcolorDefault : green;
+$widthDefault : 35%;
+$colorDefault : black;
+
 .alert {
   @include _alert($margin, $padding, $color, $fontSize, $lineHeight, $cursor, $fontWeight);
 }
@@ -20,4 +25,5 @@ body{
   @include _alertSuccess($successBackgroundColor);
   @include _alertInfo($infoBackgroundColor);
   @include _alertWarning($warningBackgroundColor);
+  @include _jumbotron($bcolorDefault, $widthDefault, $colorDefault);
 }

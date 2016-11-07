@@ -26,5 +26,12 @@ body .info {
   background-color: #2bd5eb; }
 body .warning {
   background-color: #efc71a; }
+body .jumbotron {
+  box-sizing: border-box;
+  background-color: green;
+  padding: 1.5em;
+  width: 35%; }
+  body .jumbotron p {
+    color: black; }
 
 /*# sourceMappingURL=mainMixin.css.map */
