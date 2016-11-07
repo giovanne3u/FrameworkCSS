@@ -1,11 +1,4 @@
-$colorPolice : black;
-$bcolorDefault : blue;
-$taillePolice : 25px;
-$display: flex;
-$justifyContent : center;
-$padding: 2em;
-
-header {
+@mixin _header($display, $justifyContent, $colorPolice, $bcolorDefault, $padding, $taillePolice){
   display: $display;
   justify-content: $justifyContent;
   color: $colorPolice;
