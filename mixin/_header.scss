@@ -1,8 +1,10 @@
-@mixin _header($display, $justifyContent, $colorPolice, $bcolorDefault, $padding, $taillePolice){
-  display: $display;
-  justify-content: $justifyContent;
-  color: $colorPolice;
-  background-color: $bcolorDefault;
-  padding: $padding;
-  font-size: $taillePolice;
+@mixin _header($colorPoliceHeader, $bcolorHeader){
+  header {
+    display: flex;
+    justify-content: center;
+    color: $colorPoliceHeader;
+    background-color: $bcolorHeader;
+    padding: 2em;
+    font-size: 25px;
+  }
 }

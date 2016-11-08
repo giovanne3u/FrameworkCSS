@@ -1,5 +1,12 @@
 @import "alert";
 @import "jumbotron";
+@import "button";
+@import "grid";
+@import "header";
+@import "menu";
+@import "typo";
+
+/*alert*/
 $margin : 15px;
 $padding : 20px;
 $color : white;
@@ -12,9 +19,89 @@ $successBackgroundColor : #3beb2b; /* Green */
 $infoBackgroundColor : #2bd5eb; /* Blue */
 $warningBackgroundColor : #efc71a; /* Orange */
 
+/*Jumbotron*/
 $bcolorJumbo : green;
 $widthJumbo : 35%;
 $colorJumbo : black;
+
+/*button*/
+$bcolorgrey : #c2bfb0;
+$bcolorblack : black;
+$bcolorDefault : grey;
+$bcolorSmall: white;
+$bcolorLarge: white;
+$bcolorFlat: white;
+$bcolorFancy1: red;
+$bcolorFancy2: blue;
+$colorDefault : black;
+$colorSmall: black;
+$colorLarge: black;
+$colorFlat: black;
+$borderColorDefault : red;
+$borderColorSmall : red;
+$borderColorLarge : red;
+$borderColorFancy : blue;
+$fontWeightDefault : bold;
+$fontWeightSmall : bold;
+$fontWeightLarge : bold;
+$heightDefault : 4em;
+$heightSmall : 2em;
+$heightLarge : 8em;
+$heightFancy : 4em;
+$widthDefault : 12em;
+$widthSmall : 6em;
+$widthLarge : 24em;
+$widthFancy : 12em;
+
+/*grid*/
+$nbColonnes : 8;
+$tailleGoutiere : 2;
+$tailleBorder: 2px;
+$typeBorder : solid;
+$colorBorder : black;
+
+/*header*/
+$colorPoliceHeader : black;
+$bcolorHeader : blue;
+
+/*menu*/
+$listStyle : none;
+$display : flex;
+$flexDirection : row;
+$flexWrap : wrap;
+$justifyContent : center;
+$alignItems : center;
+$textDecoration : none;
+$color : white;
+$fontWeight : bold;
+$width : 20em;
+$height : 2em;
+$backgroundColor : orange;
+$borderSize : 1px;
+$borderStyle : solid;
+$borderColor : white;
+
+/*typo*/
+/** Color variables **/
+
+$colorDefault : black;
+$smallColorDefault : gray;
+$pColorDefault : red;
+$backgroundColorDefault : gold;
+
+/** Font variables **/
+
+$fontDefault : Arial;
+$fontCodeDefault : Courrier, monospace;
+$largeFontSizeDefault : large;
+$mediumFontSizeDefault : medium;
+$smallFontSizeDefault : small;
+
+$PrFontSizeDefault : 60%;
+$PxFontSizeDefault : 50px;
+
+$fontWeightDefault : bold;
+$fontStyleDefault : italic;
 
 .alert {
   @include _alert($margin, $padding, $color, $fontSize, $lineHeight, $cursor, $fontWeight);
@@ -26,4 +113,47 @@ body{
   @include _alertInfo($infoBackgroundColor);
   @include _alertWarning($warningBackgroundColor);
   @include _jumbotron($bcolorJumbo, $widthJumbo, $colorJumbo);
+  @include _buttonDefault($bcolorDefault, $colorDefault, $fontWeightDefault, $borderColorDefault, $widthDefault, $heightDefault);
+  @include _buttonSmall($bcolorSmall, $colorSmall, $fontWeightSmall, $borderColorSmall, $widthSmall, $heightSmall);
+  @include _buttonLarge($bcolorLarge, $colorLarge, $fontWeightLarge, $borderColorLarge, $widthLarge, $heightLarge);
+  @include _buttonFlat($bcolorFlat, $colorFlat);
+  @include _buttonFancy($bcolorFancy1, $bcolorFancy2, $borderColorFancy, $widthFancy, $heightFancy);
+  @include _header($colorPoliceHeader, $bcolorHeader);
+  @include _menu($listStyle, $display, $flexDirection, $justifyContent, $flexWrap, $width, $height, $backgroundColor, $borderSize, $borderStyle, $borderColor, $alignItems, $textDecoration, $color, $fontWeight);
+
+
+  /*typo*/
+  @include _h1($largeFontSizeDefault);
+  @include _h2($largeFontSizeDefault);
+  @include _h3($largeFontSizeDefault);
+  @include _h4($mediumFontSizeDefault);
+  @include _h5($smallFontSizeDefault);
+  @include _h6($smallFontSizeDefault);
+  @include _small($smallColorDefault, $PrFontSizeDefault);
+  @include _sub($smallColorDefault, $PrFontSizeDefault);
+  @include _p($PxFontSizeDefault, $pColorDefault);
+  @include _mark($fontWeightDefault, $backgroundColorDefault);
+  @include _del();
+  @include _ins($backgroundColorDefault);
+  @include _u();
+  @include _strong($fontWeightDefault);
+  @include _em($fontStyleDefault);
+  @include _blockquote($fontStyleDefault);
+  @include _code($fontCodeDefault);
+  @include _sanspuce();
+  @include _puceCarre();
+  @include _textLeft();
+  @include _textRight();
+  @include _textCenter();
+  @include _textJustify();
+  @include _uppercase();
+  @include _lowercase();
+  @include _tableDefault($fontWeightDefault);
+  @include _tableAlternate();
+  @include _tableFullBorder();
+  @include _tableLineHover();
+}
+
+.grid{
+  @include _grid($nbColonnes, $tailleGoutiere, $tailleBorder, $typeBorder, $colorBorder);
 }

@@ -1,7 +1,16 @@
+/*alert*/
 /* Red */
 /* Green */
 /* Blue */
 /* Orange */
+/*Jumbotron*/
+/*button*/
+/*grid*/
+/*header*/
+/*menu*/
+/*typo*/
+/** Color variables **/
+/** Font variables **/
 .alert {
   padding: 20px;
   color: white;
@@ -18,13 +27,221 @@
   .alert .closebtn:hover {
     color: black; }
 
-body .danger {
-  background-color: #f44336; }
-body .success {
-  background-color: #3beb2b; }
-body .info {
-  background-color: #2bd5eb; }
-body .warning {
-  background-color: #efc71a; }
+body {
+  /*typo*/ }
+  body .danger {
+    background-color: #f44336; }
+  body .success {
+    background-color: #3beb2b; }
+  body .info {
+    background-color: #2bd5eb; }
+  body .warning {
+    background-color: #efc71a; }
+  body .jumbotron {
+    box-sizing: border-box;
+    background-color: green;
+    padding: 1.5em;
+    width: 35%; }
+    body .jumbotron p {
+      color: black; }
+  body .ButtonDefault {
+    background-color: grey;
+    padding: 5px;
+    color: black;
+    font-weight: bold;
+    border-radius: 4px;
+    border-color: red;
+    width: 12em;
+    height: 4em; }
+  body .ButtonDefault:active {
+    background-color: grey;
+    border-color: red;
+    color: black; }
+  body .ButtonDefault:hover {
+    cursor: pointer; }
+  body .ButtonSmall {
+    background-color: white;
+    padding: 5px;
+    color: black;
+    font-weight: bold;
+    border-radius: 4px;
+    border-color: red;
+    width: 6em;
+    height: 2em; }
+  body .ButtonSmall:active {
+    background-color: white;
+    border-color: red;
+    color: black; }
+  body .ButtonSmall:hover {
+    cursor: pointer; }
+  body .ButtonLarge {
+    background-color: white;
+    padding: 5px;
+    color: black;
+    font-weight: bold;
+    border-radius: 4px;
+    border-color: red;
+    width: 24em;
+    height: 8em; }
+  body .ButtonLarge:active {
+    background-color: white;
+    border-color: red;
+    color: black; }
+  body .ButtonLarge:hover {
+    cursor: pointer; }
+  body .ButtonFlat {
+    border: none;
+    background-color: white;
+    color: black; }
+  body .ButtonFullContainer {
+    width: 100%; }
+  body .ButtonFancy {
+    box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.5);
+    background: radial-gradient(red, blue);
+    border-bottom: 5px solid blue;
+    width: 12em;
+    height: 4em; }
+  body .ButtonFancy:active {
+    border-bottom: 1px solid blue; }
+  body header {
+    display: flex;
+    justify-content: center;
+    color: black;
+    background-color: blue;
+    padding: 2em;
+    font-size: 25px; }
+  body ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap; }
+    body ul li {
+      width: 20em;
+      height: 2em;
+      background-color: orange;
+      border-right: 1px solid white;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      body ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold; }
+  body h1 {
+    font-size: xx-large; }
+  body h2 {
+    font-size: x-large; }
+  body h3 {
+    font-size: large; }
+  body h4 {
+    font-size: medium; }
+  body h5 {
+    font-size: small; }
+  body h6 {
+    font-size: x-small; }
+  body small {
+    color: gray;
+    font-size: 60%; }
+  body .sub {
+    color: gray;
+    font-size: 60%; }
+  body p {
+    margin-bottom: 50px;
+    color: red; }
+  body mark {
+    font-weight: bold;
+    background-color: gold; }
+  body del {
+    text-decoration: line-through; }
+  body ins {
+    background-color: gold; }
+  body u {
+    text-decoration: underline; }
+  body strong {
+    font-weight: bold; }
+  body em {
+    font-style: italic; }
+  body blockquote {
+    font-style: italic;
+    font-weight: 100; }
+  body code {
+    font-family: Courrier, monospace; }
+  body .sanspuce {
+    list-style-type: none; }
+  body .puceCarre {
+    list-style-type: square; }
+  body .textLeft {
+    text-align: left; }
+  body .textRight {
+    text-align: right; }
+  body .textCenter {
+    text-align: center; }
+  body .textJustify {
+    text-align: justify; }
+  body .uppercase {
+    text-transform: uppercase; }
+  body .lowercase {
+    text-transform: lowercase; }
+  body .tableDefault {
+    border-collapse: collapse; }
+    body .tableDefault th {
+      font-weight: bold;
+      padding: 2px; }
+    body .tableDefault td {
+      padding: 2px; }
+  body .tableAlternate tr:nth-of-type(2n) {
+    background-color: #ffff99; }
+  body .tableFullBorder {
+    border: 2px solid black; }
+  body .tableLineHover tr:hover {
+    background-color: aqua; }
+
+.grid > .raw {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-bottom: 2%; }
+  .grid > .raw [class*="span"] {
+    box-sizing: border-box;
+    margin-left: 2%; }
+  .grid > .raw > .span1 {
+    width: 10.5%;
+    border: 2px solid black; }
+  .grid > .raw > .span2 {
+    width: 23%;
+    border: 2px solid black; }
+  .grid > .raw > .span3 {
+    width: 35.5%;
+    border: 2px solid black; }
+  .grid > .raw > .span4 {
+    width: 48%;
+    border: 2px solid black; }
+  .grid > .raw > .span5 {
+    width: 60.5%;
+    border: 2px solid black; }
+  .grid > .raw > .span6 {
+    width: 73%;
+    border: 2px solid black; }
+  .grid > .raw > .span7 {
+    width: 85.5%;
+    border: 2px solid black; }
+  .grid > .raw > .span8 {
+    width: 98%;
+    border: 2px solid black; }
+  .grid > .raw > .offset1 {
+    margin-left: 14.5%; }
+  .grid > .raw > .offset2 {
+    margin-left: 27%; }
+  .grid > .raw > .offset3 {
+    margin-left: 39.5%; }
+  .grid > .raw > .offset4 {
+    margin-left: 52%; }
+  .grid > .raw > .offset5 {
+    margin-left: 64.5%; }
+  .grid > .raw > .offset6 {
+    margin-left: 77%; }
+  .grid > .raw > .offset7 {
+    margin-left: 89.5%; }
 
 /*# sourceMappingURL=mainMixin.css.map */

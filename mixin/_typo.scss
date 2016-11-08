@@ -62,7 +62,7 @@
   }
 }
 
-@mixin _del() {
+@mixin _del(){
   del{
     text-decoration: line-through;
   }
@@ -129,7 +129,7 @@
   }
 }
 
-@mixin _textCenter() {
+@mixin _textCenter(){
   .textCenter{
     text-align: center;
   }

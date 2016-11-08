@@ -5,7 +5,7 @@
   $tailleColonnes : 100-($nbColonnes*$tailleGoutiere);
   $propTotalColonnes : percentage(100-($nbColonnes*$tailleGoutiere))/100;
   $propUniqueColonne : percentage($tailleColonnes/$nbColonnes)/100;
-
+  
   &>.raw{
     display: flex;
     flex-wrap: wrap;
