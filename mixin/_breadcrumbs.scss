@@ -1,0 +1,74 @@
+@mixin _breadcrumbs($borderColor1, $borderColor2, $borderColor3, $backgroundColorBreadcrumbs, $colorBreadcrumbs, $backColor){
+  .breadcrumbs-one{
+    background: $backColor;
+    border-width: 1px;
+    border-style: solid;
+    border-color: $borderColor1 $borderColor2 $borderColor3;
+    border-radius: 5px;
+    box-shadow: 0 0 2px rgba(0,0,0,.2);
+    overflow: hidden;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li{
+      float: left;
+    }
+
+    a{
+      padding: .7em 1em .7em 2em;
+      float: left;
+      text-decoration: none;
+      color: $colorBreadcrumbs;
+      position: relative;
+      text-shadow: 0 1px 0 rgba(255,255,255,.5);
+      background-color: $backgroundColorBreadcrumbs;
+      background-image: linear-gradient(to right, $borderColor1, $backgroundColorBreadcrumbs);
+    }
+
+    li:first-child a{
+      padding-left: 1em;
+      border-radius: 5px 0 0 5px;
+    }
+
+    a:hover{
+      background: #fff;
+    }
+
+    a::after, a::before{
+      content: "";
+      position: absolute;
+      top: 50%;
+      margin-top: -1.5em;
+      border-top: 1.5em solid transparent;
+      border-bottom: 1.5em solid transparent;
+      border-left: 1em solid;
+      right: -1em;
+    }
+
+    a::after{
+      z-index: 2;
+      border-left-color: $backgroundColorBreadcrumbs;
+    }
+
+    a::before{
+      border-left-color: $borderColor3;
+      right: -1.1em;
+      z-index: 1;
+    }
+
+    a:hover::after{
+      border-left-color: #fff;
+    }
+
+    .current, .current:hover{
+      font-weight: bold;
+      background: none;
+    }
+
+    .current::after, .current::before{
+      content: normal;
+    }
+  }
+}

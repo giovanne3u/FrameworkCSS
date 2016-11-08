@@ -1,5 +1,5 @@
-@mixin _menu($listStyle, $display, $flexDirection, $justifyContent, $flexWrap, $width, $height, $backgroundColor, $borderSize, $borderStyle, $borderColor, $alignItems, $textDecoration, $color, $fontWeight){
-
+@mixin _menu($listStyle, $display, $flexDirection, $justifyContent, $flexWrap, $width, $height, $backgroundColorMenu, $borderSize, $borderStyle, $borderColor, $alignItems, $textDecoration, $color, $fontWeight){
+  .navbar{
     ul{
       list-style: $listStyle;
       display: $display;
@@ -9,7 +9,7 @@
       li{
         width: $width;
         height: $height;
-        background-color: $backgroundColor;
+        background-color: $backgroundColorMenu;
         border-right: $borderSize $borderStyle $borderColor;
         display: $display;
         justify-content: $justifyContent;
@@ -21,4 +21,5 @@
         }
       }
     }
+  }
 }
